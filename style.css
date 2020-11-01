@@ -296,14 +296,49 @@ main section:nth-child(3) div p{
 
 main section:nth-child(4) > div:nth-child(1){
 
+    margin-top: 10px;
+
     background-color: seagreen;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+main section:nth-child(4) > div:nth-child(1) > h2{
+
+background-color: chocolate;
+
+font-size: 40px;
+
+}
+
+main section:nth-child(4) > div:nth-child(1) > figure {
+
+    background-color: crimson;
+
+    width: 150px;
+
+    border-radius: 50%;
+
+}
+
+
+main section:nth-child(4) > div:nth-child(1) > figure >img{
+
+width: 150px;
+
+border-radius: 50%;
+
+vertical-align: middle;
 }
 
 
 .contenedor{
 
 background-color: slategray;
-
 
 }
 
@@ -326,8 +361,6 @@ background-color: slategray;
 
     width: 40%;
     
-
-
     border-left: 1px solid black ;
 
     border-bottom: 1px solid black ;
@@ -338,41 +371,12 @@ background-color: slategray;
 
 }
 
-.col-1 div{
-
-  
-}
-
-.col-1 div:nth-child(1){
-
-    background-color: chartreuse;
-
-
-
- 
-}
-
-.col-1 div:nth-child(1) > span{
-
-background-color: crimson;
-
-
- 
-}
-
-.col-1 div:nth-child(2){
-
-    margin: 0;
-
-    background-color: chartreuse;
-}
 
 .col-2{
-
     
     width: 40%;
-
      
+
     border-right: 1px solid black ;
 
     border-left: 2px solid black ;
@@ -383,7 +387,61 @@ background-color: crimson;
 
     background-color: teal;
     
+}
+
+
+.col-1 div:nth-child(1){
+
+    background-color: chartreuse;
+
+}
+
+
+.col-1 div:nth-child(2){
+
+    margin: 0;
+
+    background-color: chartreuse;
+}
+
+
+.col-1 div,.col-2 div{
+
+    position: relative;
     
+    text-align: center;
+}
+
+
+ .uno{
+
+    background-color: blueviolet;
+
+    position: absolute;
+
+    top:50%;
+
+    left: 10%;
+
+    transform: translate(-10%,-50%);
+
+    border-radius: 50%;
+
+    width: 50px;
+
+    font-size: 40px;
+}
+
+
+ .dos{
+
+    display: block;
+
+    text-align:right;
+
+    font-size: 25px;
+
+    margin-right: 10px;
 }
 
 
@@ -391,3 +449,39 @@ background-color: crimson;
 
 
 /*FIN MAIN*/
+
+
+/*COMINZO FOOTER*/
+
+footer section{
+
+    display: flex;
+
+    margin-top: 10px;
+}
+
+
+footer section div:nth-child(1){
+
+    width: 80%;
+
+    text-align: center;
+
+    font-size: 50px;
+
+    background-color: darkmagenta;
+}
+
+footer section div:nth-child(1) h2{
+
+    background-color: darkorange;
+
+    margin: 0;
+
+    padding: 15px;
+
+}
+
+
+
+/*FIN FOOTER*/
