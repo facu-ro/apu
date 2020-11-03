@@ -7,6 +7,128 @@ body{
 
     border: 3px solid red;
 }
+
+
+
+
+@media  (max-width: 767px) {
+
+    body{
+
+        background-color: black;
+
+        border: 3px solid red;
+    }
+
+
+    .main-footer{
+
+        flex-wrap: wrap;
+
+      
+    
+    }
+
+    .main-footer> div:nth-child(1){
+
+        width: 10%;
+
+       
+    }
+
+    header{
+
+        background: url("apu.jpg");
+
+        background-size: cover;
+
+        background-position: center center;
+
+        text-align: center;
+
+       flex-direction: column;
+
+       
+        
+    }
+
+    
+
+
+    header section:nth-child(1){
+
+        background-color:blueviolet;
+
+      
+        
+    }
+
+
+
+   header section:nth-child(1)> h1{
+        background-color: transparent;
+    
+        color: aqua;    
+
+        text-align: center;
+     
+       
+    }
+    
+
+
+    header section:nth-child(1) p{
+
+        text-align: center;
+    
+        background-color:transparent;
+
+        font-size: 1.2rem;
+
+        width: 80%;
+
+        margin: 10px auto;
+        
+    }
+    
+    
+    header section:nth-child(1)> div{
+
+
+        flex-direction: column;
+    
+        background-color: transparent;
+    
+        padding: 0.5em;
+
+        
+    }
+
+
+
+
+    header section:nth-child(2){
+     
+        display: none;
+
+    }
+
+    header figure{
+
+        display: none;
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
 /*COMIENZO HEADER*/
 
 header{
@@ -15,6 +137,8 @@ header{
     background-color: chocolate;
     
     padding: 0;
+
+    flex-wrap: wrap;
 }
 
 
@@ -32,7 +156,7 @@ h1{
 
     text-align: center;
 
-    font-size: 60px;
+    font-size: 4em;
 
     margin: 0;
 }
@@ -43,6 +167,8 @@ header section:nth-child(1) p{
     text-align: center;
 
     background-color: crimson;
+
+    font-size: 1.2rem;
     
 }
 
@@ -63,7 +189,7 @@ header section:nth-child(1) div{
 
     background-color: cornflowerblue;
 
-    
+    padding: 0.5em;
 }
 
 .bebidas{
@@ -71,11 +197,15 @@ header section:nth-child(1) div{
     margin-left:0 ;
 
     margin-right: 0;
+
+    width: 30%;
 }
 
 .bebidas img{
 
-    height: 100px;
+    max-width: 100%;
+
+    border-radius: 5%;
 }
 
 
@@ -85,10 +215,11 @@ header section:nth-child(1) div{
    
     border:2px solid black;
    
-    padding: 10px;
+    padding: .7em;
 
     text-align: center;
 
+    font-size: 1.2rem;
 }
 
 h2{
@@ -167,7 +298,8 @@ main section ol{
 
 ol .lista-1 li, .lista-2 li, .lista-3 li{
 
-    padding: 5px;
+   padding: 0.35rem ;
+    
 }
 
 
@@ -195,26 +327,26 @@ main section:nth-child(3){
 
     width: 70%;
 
-    background-color: palevioletred;
+    background-color: yellow;
 
     text-align: center;
 
     padding: 0;
 
-    border: 4px solid black;
+    border: 0.2rem solid black;
 
-    margin-right: 1px;
+    margin-right: 0.06rem;
 
-    margin-left: 1px;
+    margin-left: 0.06rem;
 }
 
 .main-footer div:nth-child(1) h3{
 
-    font-size: 25px;
+    font-size: 1.56em;
 
     text-transform: uppercase;
 
-    margin-bottom: 5px;
+    margin-bottom: 0.31rem;
 
 }
 
@@ -223,8 +355,9 @@ main section:nth-child(3) div p{
 
     background-color: chartreuse;
 
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
 
+    line-height: 1.5rem;
 }
 
 
@@ -232,9 +365,9 @@ main section:nth-child(3) div p{
 
     text-align: left;
 
-    margin:5px ;
+    margin:0.31rem ;
 
-    padding-left: 50px;
+    padding-left: 3.1rem;
 
     background-color: peru;
 
@@ -256,16 +389,16 @@ main section:nth-child(3) div p{
 
     justify-content: left;
 
-    border: 4px solid black;
+    border: 0.2rem solid black;
 
-    margin-right: 1px;
+    margin-right:0.0625rem;
 
-    margin-left: 1px;
+    margin-left: 0.0625rem;
 }
 
 .main-footer div:nth-child(2) h3{
 
-    font-size: 25px;
+    font-size: 1.56rem;
 
     text-transform:uppercase ;
 
@@ -284,9 +417,9 @@ main section:nth-child(3) div p{
 
     list-style: none;
 
-    padding: 5px;
+    padding: 0.31rem;
 
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 /*fin main footer*/
@@ -296,7 +429,7 @@ main section:nth-child(3) div p{
 
 main section:nth-child(4) > div:nth-child(1){
 
-    margin-top: 10px;
+    margin-top: 0.625rem;
 
     background-color: seagreen;
 
@@ -311,7 +444,7 @@ main section:nth-child(4) > div:nth-child(1) > h2{
 
 background-color: chocolate;
 
-font-size: 40px;
+font-size: 2.5rem;
 
 }
 
@@ -319,16 +452,17 @@ main section:nth-child(4) > div:nth-child(1) > figure {
 
     background-color: crimson;
 
-    width: 150px;
+    width: 20%;
 
-    border-radius: 50%;
 
 }
 
 
 main section:nth-child(4) > div:nth-child(1) > figure >img{
 
-width: 150px;
+max-inline-size: 100%;
+
+height: auto;
 
 border-radius: 50%;
 
@@ -361,11 +495,11 @@ background-color: slategray;
 
     width: 40%;
     
-    border-left: 1px solid black ;
+    border-left: 0.0625rem solid black ;
 
-    border-bottom: 1px solid black ;
+    border-bottom: 0.0625rem solid black ;
 
-    border-top: 1px solid black ;
+    border-top: 0.0625rem solid black ;
 
     background-color: springgreen;
 
@@ -377,13 +511,13 @@ background-color: slategray;
     width: 40%;
      
 
-    border-right: 1px solid black ;
+    border-right:0.0625rem  solid black ;
 
-    border-left: 2px solid black ;
+    border-left: 0.0625rem solid black ;
 
-    border-bottom: 1px solid black ;
+    border-bottom: 0.0625rem solid black ;
 
-    border-top: 1px solid black ;
+    border-top: 0.0625rem solid black ;
 
     background-color: teal;
     
@@ -427,9 +561,9 @@ background-color: slategray;
 
     border-radius: 50%;
 
-    width: 50px;
+    width: 3.125rem;
 
-    font-size: 40px;
+    font-size: 2.5rem;
 }
 
 
@@ -439,13 +573,13 @@ background-color: slategray;
 
     text-align:right;
 
-    font-size: 25px;
+    font-size: 1.56rem;
 
-    margin-right: 10px;
+    margin-right: 0.625rem;
 }
 
 
-/*comienzo main promo*/
+/*fin main promo*/
 
 
 /*FIN MAIN*/
@@ -457,7 +591,7 @@ footer section{
 
     display: flex;
 
-    margin-top: 10px;
+    margin-top: 0.625rem;
 }
 
 
@@ -467,7 +601,7 @@ footer section div:nth-child(1){
 
     text-align: center;
 
-    font-size: 50px;
+    font-size: 3.125rem;
 
     background-color: darkmagenta;
 }
@@ -478,10 +612,127 @@ footer section div:nth-child(1) h2{
 
     margin: 0;
 
-    padding: 15px;
+    padding: 0.93rem;
+
+    vertical-align: middle;
+}
+
+/*comienzo iconos*/
+
+footer section nav{
+
+    background-color: darksalmon;
+
+    width: 20%;
+
+    display: flex;
+
+    justify-content: flex-end;
+    
+    align-items: center;
+}
+
+footer section nav ul {
+
+ background-color: firebrick;
+ 
+ padding: 0px;
+
+ display: flex;
+
+ flex-direction: column;
+
+ align-items: flex-end;
+ 
 
 }
 
 
 
+footer section nav ul li{
+
+    list-style: none;
+
+   background-color: deeppink;
+
+   padding: 0.625rem;
+
+   transition: all 1s;
+
+}
+
+
+
+
+footer section nav ul li a{
+
+  text-decoration: none;
+
+}
+
+
+footer section nav ul li span{
+
+    font-size: 3.125rem;
+    
+}
+
+footer section nav ul li:nth-child(1) a span{
+
+    font-size: 3.62rem;
+}
+
+footer section nav ul li:nth-child(1){
+
+    border-top-left-radius: 1.25rem;
+
+}
+
+footer section nav ul li:nth-child(3){
+
+    border-bottom-left-radius: 1.25rem;
+
+}
+
+
+
+footer section nav ul li:hover{
+
+    padding-right: 1.87rem;
+}
+
+
+footer section nav ul li:nth-child(1):hover{
+
+    border-bottom-left-radius: 1.25rem;
+
+}
+
+footer section nav ul li:nth-child(2):hover{
+
+    border-top-left-radius: 1.25rem;
+
+    border-bottom-left-radius: 1.25rem;
+
+}
+
+footer section nav ul li:nth-child(3):hover{
+
+    border-top-left-radius: 1.25rem;
+
+}
+
+/*fin iconos*/
+
+
 /*FIN FOOTER*/
+
+
+
+/*COMIENZO  MEDIA QUERIES*/
+
+
+
+
+
+/*FIN  MEDIA QUERIES*/
